@@ -5,19 +5,29 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Power Game V5 Ultimate XL</title>
-		<link rel="stylesheet" href="styles.css" />
+		<!-- Google Fonts! -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Righteous&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet" />
+		<!-- CSS -->
+		<link rel="stylesheet" href="./style.css" />
 	</head>
 	<body>
-		<!--Main component block-->
-		<main class="container">
-			<img
-				class="product"
-				src="./assets/Putipaste_futuristic_video-game_console_product_photo_stationar_3fc9a364-957e-4634-9feb-d7cf2cebef79.png"
-				alt="Power Game V5 Ultimate XL Image" />
-			<div class="content">
-				<p class="product-type">CONSOLE</p>
-				<h1>Power Game V5 Ultimate XL</h1>
-				<div>
+		<main>
+			<article class="product">
+				<picture class="product__image">
+					<img
+						src="./assets/Putipaste_futuristic_video-game_console_product_photo_stationar_3fc9a364-957e-4634-9feb-d7cf2cebef79.png"
+						alt="Power Game V5 Ultimate XL image" />
+				</picture>
+
+				<div class="product__content">
+					<p class="product__category">CONSOLE</p>
+
+					<h1 class="product__title">Power Game V5 Ultimate XL</h1>
+
 					<p>
 						Experience the future of gaming with the Power Game V5 Ultimate XL
 						console. With its cutting-edge technology, advanced graphics, and
@@ -26,18 +36,18 @@
 						gamer or a newcomer, the Power Game V5 Ultimate XL is the perfect
 						choice for anyone looking to take their gaming to the next level.
 					</p>
+
+					<div class="flex-group">
+						<p class="product__price"><span class="visually-hidden">Current price:</span> $299.99</p>
+						<p class="product__original-price">
+                            <span class="visually-hidden">Original price:</span>
+                            <s>$399.99</s>
+                        </p>
+					</div>
+
+					<button class="button" data-icon="shopping-cart">Add to Cart</button>
 				</div>
-				<div><h2>$299.99<span>$399.99</span></h2></div>
-				<div>
-					<button class="buy-button">
-						<img
-							class="cart-icon"
-							src="./assets/cart-icon.png"
-							alt="Add to Cart" />
-						Add to Cart
-					</button>
-				</div>
-			</div>
+			</article>
 		</main>
 	</body>
 </html>
